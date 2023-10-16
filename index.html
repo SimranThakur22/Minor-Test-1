@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissor game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="score-section">
+      <div class="game">
+        <p>ROCK</p>
+        <p>PAPER</p>
+        <p>SCISSORS</p>
+      </div>
+      <div class="score">
+        <div class="sc score-com">
+          <h4>COMPUTER SCORE</h4>
+          <p class="scoreboardComp">0</p>
+        </div>
+        <div class="sc score-user">
+          <h4>YOUR SCORE</h4>
+          <p class="scoreboardUser">0</p>
+        </div>
+      </div>
+    </div>
+    <div class="game-section">
+      <div class="text">
+        <p class="user">YOU PICKED</p>
+        <p class="pc">PC PICKED</p>
+      </div>
+      <div class="option">
+        <img
+          class="triangle"
+          src="image/icons8-triangle-64.png"
+          alt="triangle"
+          style="height: 280px"
+        />
+        <div class="stone-icon icon">
+          <div class="item">
+            <img src="./image/stone.svg" alt="stone" />
+          </div>
+        </div>
+        <div class="scissor-icon icon">
+          <div class="item">
+            <img src="./image/scissor.svg" alt="scissor" />
+          </div>
+        </div>
+        <div class="paper-icon icon">
+          <div class="item">
+            <img src="./image/icons8-hand-64 1.svg" alt="paper" />
+          </div>
+        </div>
+        <div class="stone-icon computer">
+          <div class="item">
+            <img src="./image/stone.svg" alt="stone" />
+          </div>
+        </div>
+        <div class="scissor-icon computer">
+          <div class="item">
+            <img src="./image/scissor.svg" alt="scissor" />
+          </div>
+        </div>
+        <div class="paper-icon computer">
+          <div class="item">
+            <img src="./image/icons8-hand-64 1.svg" alt="paper" />
+          </div>
+        </div>
+      </div>
+      <div class="btn">
+        <button class="next">NEXT</button>
+        <button class="rules">RULES</button>
+      </div>
+      <div class="rule-modal">
+        <h3>Game Rules</h3>
+        <ul style="list-style-type: square; color: #ffd600">
+          <li>
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you’ll count off “rock, paper, scissors,
+            shoot” or just “rock, paper, scissors.”
+          </li>
+          <li>
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </li>
+          <li>
+            If both players lay down the same hand, each player lays down
+            another hand
+          </li>
+        </ul>
+        <button class="close">X</button>
+      </div>
+      <div class="win-modal">
+        <h2 class="win">YOU WIN</h2>
+        <p class="info">AGAINST PC</p>
+        <button class="replay">PLAY AGAIN</button>
+      </div>
+      <div class="victory-modal">
+        <div class="logo">
+          <img class="cup" src="./image/trophy.svg" alt="trophy" />
+          <img class="stars" src="./image/Group 5.svg" alt="star" />
+        </div>
+        <div class="note">
+          <h2>HURRAY!!</h2>
+          <p>YOU WON THE GAME</p>
+          <button class="final-replay">PLAY AGAIN</button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
